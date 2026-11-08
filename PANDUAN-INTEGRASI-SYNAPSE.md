@@ -3,6 +3,7 @@
 Panduan ini menjelaskan cara menggunakan **satu file `SKILL.md` gabungan** di ChatGPT, Google Gemini, dan Claude. File tersebut sudah berisi instruksi kerja dan knowledge base SYNAPSE, sehingga untuk distribusi single-file ini tidak diperlukan file `REFERENCE.md` terpisah.
 
 **Repository:** [SYNAPSE Universal B2B Sales Intelligence Engine](https://github.com/ysiswoadiguna-source/SYNAPSE-Universal-B2B-Sales-Intelligence-Engine)  
+**Versi:** 26.5.0  
 **File utama:** [`SKILL.md`](SKILL.md)
 
 ## 1. ChatGPT Projects

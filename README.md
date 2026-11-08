@@ -4,6 +4,8 @@
 
 **Less guessing. Smarter selling. Better decisions.**
 
+**Current version: 26.5.0** · see [Changelog](#changelog)
+
 ## 🇬🇧 English | 🇮🇩 Bahasa Indonesia
 
 Choose the integration guide in your preferred language:
@@ -46,6 +48,21 @@ SYNAPSE prioritizes evidence over assumptions, separates facts from claims and i
 ## Responsible Use
 
 Review AI-generated analysis before acting on it. Do not upload confidential customer or company information unless you are authorized to do so and the platform's data settings are appropriate. Different AI platforms may express the same framework differently, so test the Skill with representative examples.
+
+## Changelog
+
+### 26.5.0
+- **Rewritten and condensed.** `SKILL.md` is about half the length of 26.4.1 (≈108 lines vs ≈204). The numbered Part A / Part B / Part C layout is replaced by short thematic sections, so the model reads the whole framework instead of skimming it.
+- **Sharper trigger description.** The Skill now states exactly when to activate: a pasted CRM record, WhatsApp chat, or email thread where the user wants a reply, follow-up, diagnosis, probability read, negotiation position, or quotation block.
+- **Situation playbooks** group intermediaries and traders, tenders/e-proc/KSO, purchasing, PO received, delivery and payment, service complaints, and other industries in one place.
+- **Analyze mode** keeps the buying-journey stages, buying-center roles, disqualification triggers, objection method, scenario analysis, commitment ladder, and full diagnosis checklist in compact form.
+- **Lifting equipment** checklist kept as its own section (capacity, lifting height vs chain length, span, duty class, power supply, compatibility, nameplate, installation scope, verified lead time, protection parts).
+- **Phrasebank trimmed** to a short set of rotating example phrases; the "don't open with *izin*" rule from 26.4.1 is kept.
+- **Removed for brevity:** the relationship-state list, the separate ethics and failure-mode sections, and parts of the signal dictionary. Their core rules (no fake urgency, no unverified claims, case isolation, no reflex discounting) are folded into the remaining sections.
+- Frontmatter `name` stays `synapse-sales-intelligence`, so existing installs and the ZIP folder name in the guides do not change.
+
+### 26.4.1
+- Communication-style patch for more natural customer-facing messages, including avoiding "izin" as a default WhatsApp opener.
 
 ## Repository
 
