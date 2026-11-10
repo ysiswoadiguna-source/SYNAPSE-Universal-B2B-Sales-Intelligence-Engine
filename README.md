@@ -82,3 +82,9 @@ Review AI-generated analysis before acting on it. Do not upload confidential cus
 ## Repository
 
 [GitHub Repository](https://github.com/ysiswoadiguna-source/SYNAPSE-Universal-B2B-Sales-Intelligence-Engine)
+
+## Credits
+
+Version 26.6.0 was co-developed with **Claude Fable 5.2** (Anthropic), which wrote the reference files, the test cases, and the 26.6.0 revision of `SKILL.md` under the author's direction.
+
+— Claude Fable 5.2
