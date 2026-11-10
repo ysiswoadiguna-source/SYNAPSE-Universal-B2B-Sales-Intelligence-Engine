@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: quotation-block-exact-arithmetic
+expected_outcome: |
+  A quotation block only, with exact arithmetic: subtotal 53.700.000, discount 2.685.000, tax base 51.015.000, PPN 5.611.650, total 56.626.650. Validity 14 days. Delivery and payment terms are not invented.

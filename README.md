@@ -4,7 +4,7 @@
 
 **Less guessing. Smarter selling. Better decisions.**
 
-**Current version: 26.5.0** · see [Changelog](#changelog)
+**Current version: 26.6.0** · see [Changelog](#changelog)
 
 ## 🇬🇧 English | 🇮🇩 Bahasa Indonesia
 
@@ -15,7 +15,7 @@ Choose the integration guide in your preferred language:
 
 ## 🚀 Integration Guide | Panduan Integrasi
 
-SYNAPSE is distributed as **one combined Markdown Skill file**. The complete workflow instructions and sales knowledge are included in `SKILL.md`, so users do not need to upload a separate reference file.
+SYNAPSE works as **one Markdown Skill file**. `SKILL.md` contains the complete operating framework and runs on its own. From 26.6.0 an optional `references/` folder adds expert depth (qualification, negotiation, extended playbooks, a signal dictionary, domain notes) that the model reads only when a case needs it.
 
 Supported setup paths:
 
@@ -37,9 +37,11 @@ For step-by-step setup, choose the [English guide](SYNAPSE-INTEGRATION-GUIDE.md)
 
 ## 📄 Core Skill File
 
-- [`SKILL.md`](SKILL.md) — the combined single-file Skill. It contains the operating instructions and the SYNAPSE knowledge base.
+- [`SKILL.md`](SKILL.md) — the core Skill. It contains the operating instructions and the SYNAPSE knowledge base, and is complete on its own.
+- [`references/`](references/) — optional depth, loaded on demand: [`qualification.md`](references/qualification.md), [`negotiation.md`](references/negotiation.md), [`playbooks.md`](references/playbooks.md), [`signals.md`](references/signals.md), [`domains.md`](references/domains.md).
+- [`evals/`](evals/) — five test cases with pass/fail checks, for verifying a change before release. Not needed to use the Skill.
 
-Upload this file to your AI platform's Skill workflow. For ChatGPT Projects, upload it as a project source and add the short project instruction provided in the integration guide. Follow the target platform's current upload flow; some Claude upload paths may require the same single `SKILL.md` to be placed in a folder and packaged as a ZIP.
+Upload `SKILL.md` to your AI platform's Skill workflow; add the `references/` files where the platform accepts more than one file. For ChatGPT Projects, upload it as a project source and add the short project instruction provided in the integration guide. Follow the target platform's current upload flow; some Claude upload paths require `SKILL.md` (and `references/`) to be placed in a folder and packaged as a ZIP.
 
 ## Operating Principles
 
@@ -50,6 +52,19 @@ SYNAPSE prioritizes evidence over assumptions, separates facts from claims and i
 Review AI-generated analysis before acting on it. Do not upload confidential customer or company information unless you are authorized to do so and the platform's data settings are appropriate. Different AI platforms may express the same framework differently, so test the Skill with representative examples.
 
 ## Changelog
+
+### 26.6.0
+- **Core plus references.** `SKILL.md` stays short and self-sufficient; five reference files hold the depth and are read only when the case calls for them. Single-file installs keep working with `SKILL.md` alone.
+- **Evidence-based probability.** The stage anchors are now adjusted by seven qualifiers (need, spec, access, budget, dated trigger, decision process, alternative), with two caps and a confidence rule tied to how many qualifiers are evidenced. The anchors are labelled as starting values to be calibrated against real win/loss history.
+- **Next-move priority order.** Answer the customer, deliver what we owe, respect their date, ask for the missing qualifier — otherwise do not send.
+- **Negotiation method.** Diagnose the type of price pressure first; concession plan with give-get trades; scope before margin; like-for-like comparison checklist; objection table. The floor, discount authority, and payment terms must come from the user.
+- **Calc mode rules.** Fixed calculation order, no assumed tax rate, double-checked arithmetic, mismatches shown rather than silently corrected.
+- **Pre-send check** before every draft, and new short playbooks for new inquiries and lost or dormant deals. Extended playbooks cover follow-up cadence, delays, overdue payment, handovers, and meeting prep.
+- **Signal dictionary restored** as a reference: ambiguous customer phrases and behaviours, their possible meanings, and the question that separates them.
+- **Language.** Drafts follow the language of the customer's thread; Indonesian remains the default.
+- **Wider trigger description**, including short Indonesian and English asks about a specific customer.
+- **Test cases** added under `evals/` (five cases, 28 checks).
+- Frontmatter `name` stays `synapse-sales-intelligence`.
 
 ### 26.5.0
 - **Rewritten and condensed.** `SKILL.md` is about half the length of 26.4.1 (≈108 lines vs ≈204). The numbered Part A / Part B / Part C layout is replaced by short thematic sections, so the model reads the whole framework instead of skimming it.

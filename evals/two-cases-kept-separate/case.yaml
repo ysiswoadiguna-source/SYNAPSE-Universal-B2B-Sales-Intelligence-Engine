@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: two-cases-kept-separate
+expected_outcome: |
+  Two clearly separated answers. Case A asks for the missing head and flow data instead of quoting a price. Case B acknowledges PO-2291 and gives no delivery date as a fact. No detail from one case appears in the other.

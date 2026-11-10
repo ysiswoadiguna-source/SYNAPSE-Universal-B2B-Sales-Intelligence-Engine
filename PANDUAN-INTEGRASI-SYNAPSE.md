@@ -1,16 +1,16 @@
 # SYNAPSE Universal B2B Sales Intelligence Engine — Panduan Integrasi
 
-Panduan ini menjelaskan cara menggunakan **satu file `SKILL.md` gabungan** di ChatGPT, Google Gemini, dan Claude. File tersebut sudah berisi instruksi kerja dan knowledge base SYNAPSE, sehingga untuk distribusi single-file ini tidak diperlukan file `REFERENCE.md` terpisah.
+Panduan ini menjelaskan cara menggunakan SYNAPSE di ChatGPT, Google Gemini, dan Claude. `SKILL.md` sudah berisi instruksi kerja dan knowledge base SYNAPSE dan bisa dipakai sendiri. File di folder `references/` bersifat opsional: isinya pendalaman untuk analisis, negosiasi, dan situasi khusus, dan sebaiknya ikut diunggah jika platform menerima lebih dari satu file.
 
 **Repository:** [SYNAPSE Universal B2B Sales Intelligence Engine](https://github.com/ysiswoadiguna-source/SYNAPSE-Universal-B2B-Sales-Intelligence-Engine)  
-**Versi:** 26.5.0  
+**Versi:** 26.6.0  
 **File utama:** [`SKILL.md`](SKILL.md)
 
 ## 1. ChatGPT Projects
 
 1. Buka [ChatGPT](https://chatgpt.com/).
 2. Buat Project bernama `SYNAPSE Sales Intelligence`.
-3. Unggah file `SKILL.md` dari repository ke Project.
+3. Unggah file `SKILL.md` dari repository ke Project. Jika mau, unggah juga lima file di `references/` sebagai sumber tambahan.
 4. Buka pengaturan Project dan masukkan instruksi berikut:
 
    ```text
@@ -31,7 +31,7 @@ Panduan resmi: [Projects in ChatGPT](https://help.openai.com/id-id/articles/1016
 
 Panduan resmi: [Create and manage skills for Gemini Apps](https://support.google.com/gemini/answer/17094296?hl=id)
 
-Gemini memerlukan metadata dan instruksi Skill berada di dalam `SKILL.md` pada tingkat utama. Versi ini disiapkan untuk alur satu file tersebut.
+Gemini memerlukan metadata dan instruksi Skill berada di dalam `SKILL.md` pada tingkat utama. `SKILL.md` sudah lengkap untuk alur satu file tersebut.
 
 ## 3. Claude Skills
 
@@ -41,12 +41,18 @@ Ikuti alur unggah yang tersedia di akun Claude Mas:
 2. Jika diminta, aktifkan **Code execution and file creation** atau **Create and edit files** di pengaturan kemampuan.
 3. Buka **Customize → Skills**, lalu pilih **Create skill / Upload a skill**.
 4. Jika antarmuka menerima file Markdown langsung, unggah `SKILL.md`.
-5. Jika antarmuka meminta ZIP, buat folder `synapse-sales-intelligence`, masukkan hanya `SKILL.md`, lalu kompres folder itu menjadi ZIP:
+5. Jika antarmuka meminta ZIP, buat folder `synapse-sales-intelligence`, masukkan `SKILL.md` beserta folder `references/`, lalu kompres folder itu menjadi ZIP:
 
    ```text
    synapse-sales-intelligence.zip
    └── synapse-sales-intelligence/
-       └── SKILL.md
+       ├── SKILL.md
+       └── references/
+           ├── qualification.md
+           ├── negotiation.md
+           ├── playbooks.md
+           ├── signals.md
+           └── domains.md
    ```
 
 6. Selesaikan impor, aktifkan Skill, lalu uji menggunakan percakapan customer.
@@ -73,7 +79,7 @@ Pisahkan fakta, klaim, dan inferensi. Jangan mengarang informasi yang belum ters
 
 ## 5. Catatan Penggunaan
 
-- Gunakan `SKILL.md` gabungan sebagai sumber utama kerangka SYNAPSE.
+- Gunakan `SKILL.md` sebagai sumber utama kerangka SYNAPSE; file di `references/` melengkapi, tidak pernah menggantikannya.
 - Bedakan fakta terverifikasi, klaim customer, inferensi, hipotesis, dan hal yang belum diketahui.
 - Jangan mengarang harga, stok, spesifikasi, detail kompetitor, tanggal, atau komitmen.
 - Tinjau hasil analisis AI sebelum dipakai dalam komunikasi dengan customer.

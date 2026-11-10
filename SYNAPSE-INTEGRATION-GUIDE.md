@@ -1,16 +1,16 @@
 # SYNAPSE Universal B2B Sales Intelligence Engine — Integration Guide
 
-This guide explains how to use the **single combined `SKILL.md` file** with ChatGPT, Google Gemini, and Claude. The file already contains the SYNAPSE operating instructions and sales knowledge base; a separate `REFERENCE.md` is not required for this single-file distribution.
+This guide explains how to use SYNAPSE with ChatGPT, Google Gemini, and Claude. `SKILL.md` contains the SYNAPSE operating instructions and sales knowledge base and works on its own. The files in `references/` are optional: they add depth for analysis, negotiation, and specific situations, and should be added wherever the platform accepts more than one file.
 
 **Repository:** [SYNAPSE Universal B2B Sales Intelligence Engine](https://github.com/ysiswoadiguna-source/SYNAPSE-Universal-B2B-Sales-Intelligence-Engine)  
-**Version:** 26.5.0  
+**Version:** 26.6.0  
 **Core file:** [`SKILL.md`](SKILL.md)
 
 ## 1. ChatGPT Projects
 
 1. Open [ChatGPT](https://chatgpt.com/).
 2. Create a Project named `SYNAPSE Sales Intelligence`.
-3. Upload the repository's `SKILL.md` file to the Project.
+3. Upload the repository's `SKILL.md` file to the Project. Optionally upload the five files in `references/` as additional sources.
 4. In Project settings, add this instruction:
 
    ```text
@@ -31,7 +31,7 @@ Official guide: [Projects in ChatGPT](https://help.openai.com/en/articles/101695
 
 Official guide: [Create and manage skills for Gemini Apps](https://support.google.com/gemini/answer/17094296?hl=en)
 
-Gemini requires Skill metadata and instructions to be in `SKILL.md` at the top level. This distribution is designed for that single-file workflow.
+Gemini requires Skill metadata and instructions to be in `SKILL.md` at the top level. `SKILL.md` is complete on its own for that single-file workflow.
 
 ## 3. Claude Skills
 
@@ -41,12 +41,18 @@ Use the upload flow available in your Claude account:
 2. Ensure **Code execution and file creation** (or **Create and edit files**) is enabled if your account requires it for Skills.
 3. Open **Customize → Skills** and choose **Create skill / Upload a skill**.
 4. If the interface accepts a Markdown file directly, upload `SKILL.md`.
-5. If the interface requires a ZIP, create a folder named `synapse-sales-intelligence`, place only `SKILL.md` inside it, and ZIP that folder:
+5. If the interface requires a ZIP, create a folder named `synapse-sales-intelligence`, place `SKILL.md` and the `references/` folder inside it, and ZIP that folder:
 
    ```text
    synapse-sales-intelligence.zip
    └── synapse-sales-intelligence/
-       └── SKILL.md
+       ├── SKILL.md
+       └── references/
+           ├── qualification.md
+           ├── negotiation.md
+           ├── playbooks.md
+           ├── signals.md
+           └── domains.md
    ```
 
 6. Finish the upload/import, enable the Skill, and test it with a customer conversation.
@@ -73,7 +79,7 @@ Separate facts from claims and inferences. Do not invent missing information.
 
 ## 5. Usage Notes
 
-- Use the combined `SKILL.md` as the single source for the SYNAPSE framework.
+- Use `SKILL.md` as the primary source for the SYNAPSE framework; the `references/` files extend it and never override it.
 - Distinguish verified facts, customer claims, inferences, hypotheses, and unknowns.
 - Do not invent pricing, stock, specifications, competitor details, dates, or commitments.
 - Review AI-generated analysis before using it in a live customer interaction.

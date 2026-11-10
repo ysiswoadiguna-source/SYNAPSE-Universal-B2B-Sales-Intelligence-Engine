@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: park-after-two-unanswered-touches
+expected_outcome: |
+  Recommends parking or nurturing instead of a third chase, gives a low probability with confidence stated separately, names the key unknown (end user or specification), and keeps internal labels out of any customer-facing text.

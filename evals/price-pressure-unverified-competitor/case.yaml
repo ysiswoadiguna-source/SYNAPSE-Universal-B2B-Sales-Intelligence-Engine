@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: price-pressure-unverified-competitor
+expected_outcome: |
+  Advises against conceding yet, and drafts a reply that asks what the competing offer includes so the two can be compared like for like. No discount or new price appears in the draft. The user is told what they must decide or verify before any concession.
